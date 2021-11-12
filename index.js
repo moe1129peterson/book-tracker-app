@@ -4,7 +4,8 @@ app.get('/', function (req, res) {
     res.send ('It is working!'); 
 }); 
 
-app.use(express.static('public'))
+app.use(express.static('public'));
+app.use('/api/posts', postsRoutes); 
 
 app.listen(process.env.PORT || 5000); 
 
