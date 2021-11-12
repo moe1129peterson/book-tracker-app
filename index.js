@@ -5,7 +5,7 @@ app.get('/', function (req, res) {
 }); 
 
 app.use(express.static('public'));
-app.use('/api/posts', postsRoutes); 
+
 
 app.listen(process.env.PORT || 5000); 
 
